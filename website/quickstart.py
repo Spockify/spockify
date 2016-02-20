@@ -7,6 +7,8 @@ import oauth2client
 from oauth2client import client
 from oauth2client import tools
 
+from apiclient.discovery import build
+
 try:
     import argparse
     flags = argparse.ArgumentParser(parents=[tools.argparser]).parse_args()
@@ -18,6 +20,19 @@ except ImportError:
 SCOPES = 'https://www.googleapis.com/auth/gmail.readonly'
 CLIENT_SECRET_FILE = 'client_secret.json'
 APPLICATION_NAME = 'Gmail API Python Quickstart'
+
+def build_service(credentials):
+  """Build a Gmail service object.
+
+  Args:
+    credentials: OAuth 2.0 credentials.
+
+  Returns:
+    Gmail service object.
+  """
+  http = httplib2.Http()
+  http = credentials.authorize(http)
+  return build('gmail', 'v1', http=http)
 
 
 def get_credentials():
