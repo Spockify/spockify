@@ -1,5 +1,1 @@
-{'values':
-  ['Anger', 'Disgust', 'Fear', 'Joy', 'Sadness', 'Analytical', 'Confident', 'Tentative', 'Openness', 'Conscientiousness', 'Extraversion', 'Agreeableness', 'Emotional Range'],
-'scores':
-  [0.171213, 0.060162, 0.055113, 0.203837, 0.509675, 0.0, 0.986, 0.0, 0.673, 0.064, 0.256, 0.024, 0.945]
-}
+{'values': ['Anger', 'Disgust', 'Fear', 'Joy', 'Sadness', 'Analytical', 'Confident', 'Tentative', 'Openness', 'Conscientiousness', 'Extraversion', 'Agreeableness', 'Emotional Range'], 'scores': [0.171213, 0.060162, 0.055113, 0.203837, 0.509675, 0.0, 0.986, 0.0, 0.673, 0.064, 0.256, 0.024, 0.945]}
