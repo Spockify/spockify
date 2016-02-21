@@ -436,6 +436,12 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
     <script type="text/javascript">
   window.onload = function () {
+    var data = JSON.parse("[]");
+    $.getJSON("../out.json", function(json) {
+      console.log(json); // this will show the info it in firebug console
+
+      for(var i=0; i<13; i+=1) data.push('{"y":'+json[scores][i]+',"label:"'+json[values][i]+'}');
+    });
 
     var chart = new CanvasJS.Chart("chartContainer",
     {
@@ -455,13 +461,13 @@
 
       {
         type: "column",
-        dataPoints: [
+        dataPoints: data /*[
         {y: 1, label: "Anger"},
         {y: 1,  label: "Disgust" },
         {y: 1,  label: "Fear"},
         {y: 1,  label: "Joy"},
         {y: 1,  label: "Sadness"}
-        ]
+      ]*/
       }
       ]
     });
@@ -472,9 +478,7 @@
   </script>
 
   <script>
-  $.getJSON("../out.json", function(json) {
-    console.log(json); // this will show the info it in firebug console
-  });
+
   </script>
 
   </body>
