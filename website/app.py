@@ -14,7 +14,17 @@ def index():
 
 @app.route("/getmsgs")
 def getmsgs():
-    return trygmail.getGmailMessages("pat.lempert@gmail.com")
+    email = session["input_email"]
+    return trygmail.getGmailMessages(email)
+
+@app.route("/input",methods=["GET","POST"])
+def input():
+    if request.method=="GET":
+        return render_template("input.html")
+    else:
+        session["input_email"] = request.form['input_email']
+        return redirect(url_for("getmsgs"))
+
 
 if __name__ == "__main__":
     app.debug = True
