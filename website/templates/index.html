@@ -436,13 +436,16 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
     <script type="text/javascript">
   window.onload = function () {
-    var data = JSON.parse("[]");
+    var JSONData = $.getJSON("../out.json", function(json){console.log(json);});
+	  var data = JSON.parse(JSONData);
+    //var data = JSON.parse("[]");
+    /*
     $.getJSON("../out.json", function(json) {
       console.log(json); // this will show the info it in firebug console
 
       for(var i=0; i<13; i+=1) data.push('{"y":'+json[scores][i]+',"label:"'+json[values][i]+'}');
     });
-
+*/
     var chart = new CanvasJS.Chart("chartContainer",
     {
       title:{
@@ -457,7 +460,7 @@
         horizontalAlign: "center"
       },
       theme: "theme4",
-      data: [
+      data:
 
       {
         type: "column",
@@ -469,7 +472,7 @@
         {y: 1,  label: "Sadness"}
       ]*/
       }
-      ]
+      
     });
 
 
