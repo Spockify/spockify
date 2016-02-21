@@ -1,13 +1,14 @@
 from quickstart import *
 from msg import *
+import json
+import sys
+from watson_developer_cloud import ToneAnalyzerV3Beta as ToneAnalyzer
+import ast
 
 
 #~~~PUT MESSAGE ID BELOW~~~
 
-messages = ListMessagesMatchingQuery(build_service(get_credentials()), "me", query='jgpeconomopolis@gmail.com')
-
-
-#print messages[0]
+messages = ListMessagesMatchingQuery(build_service(get_credentials()), "me", query='from:pat.lempert@gmail.com')
 
 convos = []
 
@@ -23,8 +24,42 @@ while (i<len(messages)):
     index2 -= len("--001a113d38862b78c0052be7b244")
     msg_content = str(msg_info)[index1:index2]
     convos.append(msg_content)
-    print i
     i+=1
 
-print convos
+#print convos
+
+
+
+tone_analyzer = ToneAnalyzer(username='8793fc64-61e7-4fb0-b96c-df3c1a8a15f6',
+                             password='Se0SQXprC9E3',
+                             version='2016-02-11')
+
+analyzed_text = []
+
+for c in convos:
+    analyzed_text.append(json.dumps(tone_analyzer.tone(text=c), indent=2))
+
+tones = {}
+
+tones["emotion"]=ast.literal_eval(analyzed_text[0])["document_tone"]["tone_categories"][0]["tones"]
+
+tones["language"]=ast.literal_eval(analyzed_text[0])["document_tone"]["tone_categories"][0]["tones"]
+
+tones["social"]=ast.literal_eval(analyzed_text[0])["document_tone"]["tone_categories"][0]["tones"]
+print tones
+
+# print
+# print str(analyzed_text[0]["document_tone"]["tone_categories"][1]["tones"])
+# print
+# print str(analyzed_text[0]["document_tone"]["tone_categories"][2]["tones"])
+
+########################################################################
+# Drafts = ListDrafts(build_service(get_credentials()), "me")          #
+#                                                                      #
+# i = 0                                                                #
+# while i<len(drafts):                                                 #
+#     draft_id = drafts[i]["message"]["threadId"]                      #
+#     print GetDraft(build_service(get_credentials()), "me", draft_id) #
+#     i+=1                                                             #
+########################################################################
 
