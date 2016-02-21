@@ -1,0 +1,97 @@
+From nobody Sun Feb 21 01:20:43 2016
+Delivered-To: 57leonardo@gmail.com
+Received: by 10.140.93.180 with SMTP id d49csp1981412qge;
+ Tue, 16 Feb 2016 10:56:50 -0800 (PST)
+X-Received: by 10.129.130.132 with SMTP id s126mr12570785ywf.131.1455649010435; 
+ Tue, 16 Feb 2016 10:56:50 -0800 (PST)
+Return-Path: <jgpeconomopolis@gmail.com>
+Received: from mail-yk0-x22e.google.com (mail-yk0-x22e.google.com.
+ [2607:f8b0:4002:c07::22e])
+ by mx.google.com with ESMTPS id v189si14683475ywf.401.2016.02.16.10.56.50
+ for <57leonardo@gmail.com>
+ (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+ Tue, 16 Feb 2016 10:56:50 -0800 (PST)
+Received-SPF: pass (google.com: domain of jgpeconomopolis@gmail.com designates
+ 2607:f8b0:4002:c07::22e as permitted sender)
+ client-ip=2607:f8b0:4002:c07::22e; 
+Authentication-Results: mx.google.com;
+ spf=pass (google.com: domain of jgpeconomopolis@gmail.com designates
+ 2607:f8b0:4002:c07::22e as permitted sender)
+ smtp.mailfrom=jgpeconomopolis@gmail.com; 
+ dkim=pass header.i=@gmail.com;
+ dmarc=pass (p=NONE dis=NONE) header.from=gmail.com
+Received: by mail-yk0-x22e.google.com with SMTP id z7so74093743yka.3
+ for <57leonardo@gmail.com>; Tue, 16 Feb 2016 10:56:50 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113;
+ h=mime-version:date:message-id:subject:from:to:content-type;
+ bh=aWnDQpEYfY4gJnCjRXREJZAKJRQtkl92Z6O6oN4zOEU=;
+ b=fezoJ+gFy6otDPT7HIwx8wiYcRi90qGcxrBTg+w1fddFYC+aG6rWNiKEStyEN3q1bA
+ Hvg1+C0Mvud4GDqw6kFpM2N4HBDQciH8aUI5ch9X3KYmyoH3bFMb+/OuXZCx68TTm48o
+ ynp0/dA4Ed6H455j4jmFwW5W5KJxCCv27GkYFw2vMo9w+7dwX7x68BWLSYrF8PClcRVZ
+ Lu+EZZ4dZHRm3SoqHe7bGZcChT1h2A1a4V0N6lfFAztmtGXR7RU7mxSUBE2jdoVpmTiI
+ ZOEktyiMHIqJGpAkQpyw5vzJARQy7tS7l86i0JbJjWUPdaSds01tZw7qsYb46lZvxAnc
+ Pwsg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20130820;
+ h=x-gm-message-state:mime-version:date:message-id:subject:from:to
+ :content-type;
+ bh=aWnDQpEYfY4gJnCjRXREJZAKJRQtkl92Z6O6oN4zOEU=;
+ b=H9L9kY+2Cog1G1YRR6nt+4mjjbAUPU/iYXn6y1OP0AGgMvgvXjAUnNRy0fQDts1kvB
+ o7u+DdjhBDHLrwVbVtpkUi5o52FIANAUKesl2D6q3Nsnt5tG01g9V7w9RZYIjhKVh3aF
+ 5SO8F7QnqVB4ZLs2nRLZGZpyuMm3V40EWBdwMsIicaKioGPT+4wABq+IL9bLaqviCCZr
+ 8OD66rLSAJpfkr4vC75RcjqdyvCuz5rsV+z2/gIpSH9oelRI36kyRuy/YEehvnwoQoFP
+ c5dyxh2crbJlhcS8BxFCvxOarQeS/UBUMAFfo9dm48Xzbstiyt4D3Ll/RFMpcaJE1yCV
+ uMNg==
+X-Gm-Message-State: AG10YOTKP4vfCaY36gZYSbwzRWM/CTZmFvrkf/RUslgDwqN1dL3NJnmRyOoZ4EtRFo0GU6p/6U3jRbih4HBQ5w==
+MIME-Version: 1.0
+X-Received: by 10.37.20.84 with SMTP id 81mr13629304ybu.95.1455649010184; Tue,
+ 16 Feb 2016 10:56:50 -0800 (PST)
+Received: by 10.37.53.70 with HTTP; Tue, 16 Feb 2016 10:56:50 -0800 (PST)
+Date: Tue, 16 Feb 2016 13:56:50 -0500
+Message-ID: <CAAhNr7c7gNs__tqjAHMk9b6LdTjXZ9Vue2zcJoNn4DTeCAS__A@mail.gmail.com>
+Subject: If I do not get a response by Monday (02/22) I'll inform Principal
+ Zhang that poster night will be canceled
+From: Jason Econome <jgpeconomopolis@gmail.com>
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary=001a113d38862b78c0052be7b244
+Bcc: 57leonardo@gmail.com
+
+--001a113d38862b78c0052be7b244
+Content-Type: text/plain; charset=UTF-8
+
+If you are interested in 02/26 poster night please e-mail me your poster by
+Monday (02/22) and I will print it out for you; the poster board is also
+available for you (this will also be used for the NYCSEF contest if you
+have applied).
+
+Honestly, I am disappointed in the lack of responses to poster night,
+as well as in past messages I have sent your way.
+
+Again, if you need me to print out a poster for either of the two events
+mentioned above the deadline is 02/22 by 5:00 pm, otherwise you are
+on your own.
+
+I hope you are enjoying the break and certainly hope there is enough
+interest in poster night; it's been quite successful in the past years.
+
+Econome
+
+--001a113d38862b78c0052be7b244
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">If you are interested in 02/26 poster night please e-mail =
+me your poster by Monday (02/22) and I will print it out for you; the poste=
+r board is also available for you (this will also be used for the NYCSEF co=
+ntest if you have applied).=C2=A0<div><br></div><div>Honestly, I am disappo=
+inted in the lack of responses to poster night,=C2=A0</div><div>as well as =
+in past messages I have sent your way.=C2=A0</div><div><br></div><div>Again=
+, if you need me to print out a poster for either of the two events mention=
+ed above the deadline is 02/22 by 5:00 pm, otherwise you are=C2=A0</div><di=
+v>on your own.</div><div><br></div><div>I hope you are enjoying the break a=
+nd certainly hope there is enough=C2=A0</div><div>interest in poster night;=
+ it&#39;s been quite successful in the past years.</div><div><br></div><div=
+>Econome</div></div>
+
+--001a113d38862b78c0052be7b244--
+
