@@ -287,7 +287,8 @@
       <!--main content start-->
       <section id="main-content">
           <section class="wrapper">
-
+            <div id="chartContainer" style="height: 300px; width: 100%;">
+            </div>
               <div class="row">
                   <div class="col-lg-9 main-chart">
 
@@ -432,11 +433,11 @@
             console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
         }
     </script>
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
     <script type="text/javascript">
   window.onload = function () {
 
-    var chart = new CanvasJS.Chart("emotionChart",
+    var chart = new CanvasJS.Chart("chartContainer",
     {
       title:{
         text: "Emotions"
@@ -469,6 +470,12 @@
     chart.render();
   }
   </script>
-  <script type="text/javascript" src="/assets/script/canvasjs.min.js"></script>
+
+  <script>
+  $.getJSON("../out.json", function(json) {
+    console.log(json); // this will show the info it in firebug console
+  });
+  </script>
+
   </body>
 </html>
