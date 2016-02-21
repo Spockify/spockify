@@ -71,6 +71,14 @@ print scores
 #print values
 #print scores
 
+ret={}
+
+ret["values"] = values
+ret["scores"] = scores
+
+f = open('out.json', 'w+')
+f.write(str(ret))
+
 # print
 # print str(analyzed_text[0]["document_tone"]["tone_categories"][1]["tones"])
 # print
