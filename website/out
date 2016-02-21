@@ -1,2 +1,2 @@
-['tone_name', 'score', 'tone_id', 'tone_name', 'score', 'tone_id', 'tone_name', 'score', 'tone_id']
-['Anger', 0.171213, 'anger', 'Analytical', 0.0, 'analytical', 'Openness', 0.673, 'openness_big5']
+['Anger', 'Disgust', 'Fear', 'Joy', 'Sadness', 'Analytical', 'Confident', 'Tentative', 'Openness', 'Conscientiousness', 'Extraversion', 'Agreeableness', 'Emotional Range']
+[0.171213, 0.060162, 0.055113, 0.203837, 0.509675, 0.0, 0.986, 0.0, 0.673, 0.064, 0.256, 0.024, 0.945]

@@ -46,26 +46,30 @@ tones["emotion"]=ast.literal_eval(analyzed_text[0])["document_tone"]["tone_categ
 tones["language"]=ast.literal_eval(analyzed_text[0])["document_tone"]["tone_categories"][1]["tones"]
 
 tones["social"]=ast.literal_eval(analyzed_text[0])["document_tone"]["tone_categories"][2]["tones"]
-#print tones
-
 
 values = []
 scores = []
 
-v1 = tones["emotion"][0].keys()
-v2 = tones["language"][0].keys()
-v3 = tones["social"][0].keys()
-
-values = v1+v2+v3
-
-s1 = tones["emotion"][0].values()
-s2 = tones["language"][0].values()
-s3 = tones["social"][0].values()
-
-scores = s1+s2+s3
+for el in tones["emotion"]:
+    values.append(el["tone_name"])
+for el in tones["language"]:
+    values.append(el["tone_name"])
+for el in tones["social"]:
+    values.append(el["tone_name"])
 
 print values
+
+
+for el in tones["emotion"]:
+    scores.append(el["score"])
+for el in tones["language"]:
+    scores.append(el["score"])
+for el in tones["social"]:
+    scores.append(el["score"])
 print scores
+
+#print values
+#print scores
 
 # print
 # print str(analyzed_text[0]["document_tone"]["tone_categories"][1]["tones"])
