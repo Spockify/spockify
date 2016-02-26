@@ -12,6 +12,10 @@ def login():
 def index():
     return render_template("index.html")
 
+@app.route("/showgraph")
+def showgraph():
+    return render_template("showgraph.html")
+
 @app.route("/getmsgs")
 def getmsgs():
     email = session["input_email"]
